@@ -1,0 +1,69 @@
+<h2>Medical Form</h2>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+<form name='medform' action='form1.php' method='post'>
+<div>
+             <b>First Name</b><input type="text" name="first_name"></input>
+            <b>Second Name</b><input type="text" name="last_name"></input>
+</div><br>
+<div>
+<label><b>Gender</b></label><br>
+<label>
+    <input type="radio" name="gender" value="male"> Male
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female"> Female
+  </label>
+
+</div><br>
+<div><br>
+<label><b>Department</b></label><br>
+	<label>
+			<input type="checkbox" name="department" value="inpatient"> In Patient
+		</label><br>
+		<label>
+			<input type="checkbox" name="department" value="outpatient"> Out Patient
+		</label><br>
+             </div><br>
+<div><br>
+<b>Doctor's Name</b><input type="text" name="doc_name"></input>
+</div><br>
+<div>
+<b>Appointment Date</b><input type="date" name="date"><br><br>
+<b>Appointment Time</b><input type="time" id="time" name="time">
+</div><br>
+<div>
+<b>Payment Mode</b><select name="payment">
+              <option>Cash</option>
+              <option>Card</option>
+              <option>M-Pesa</option>
+</select>
+</div><br>
+<div>
+<label><b>Consultation Fee</b></label><br>
+<input type="text" name="consult_fee">
+</div><br>
+<div>
+<label><b>Medical Fee</b></label><br>
+<input type="text" name="med_fee">
+</div><br>
+<div>
+<label><b>Pharmacy</b></label><br>
+<input type="text" name="pharm_fee">
+</div><br>
+
+<div>
+<b>Upload Insurance Card</b><br><input type="file" id="file" name="file"><br>
+                    
+
+</div><br>
+<div>
+<label><b>Comments</b></label><br>
+<textarea  rows="10" cols="50" name="comments"></textarea><br>
+</div><br>
+<div>
+<input type='submit' value='submit order'>
+<input type='reset' value='reset form'>
+</div><br><br>
+
+</form>
